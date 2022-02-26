@@ -1,0 +1,280 @@
+/* Color scheme */
+:root {
+    --text-color: #010101;
+    --stable-color: #747474;
+    --brand-color: #F41D92;
+    --light-color: #f2f2f2;
+    --bg-color: #FDFDFD;
+    --bg-color-rgb: 253, 253, 253;
+    --highlight-color: yellow;
+    --content-width: 54rem;
+    --line-height: 1.5;
+    --line-height-tight: 1.1;
+    --negative: #D30101;
+    --positive: #51950F;
+    --serif-font: Palatino, Garamond, Bookman, "Avant Garde", serif;
+    --sans-serif-font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.dark:root {
+    --text-color: #dcdfe4;
+    --light-color: #dcdfe4;
+    --bg-color: #282c34;
+    --bg-color-rgb: 28, 44, 34;
+}
+.dark:root hr {
+    background-color:#999999;
+}
+.dark:root main nav {
+    border-bottom: #999999 1px solid;
+}
+.dark:root main footer {
+    border-top: #999999 1px solid;
+}
+.dark:root main .pagination a.active {
+    background-color: var(--stable-color);
+    color: var(--light-color);
+}
+.dark .dark--invert {
+    filter: invert(1);
+}
+
+/* Button for changing color scheme */
+.toggle-theme {
+    border: 0;
+    background: transparent;
+    background-image: none;
+    padding: 0 0.5em;
+    color: var(--text-color);
+    cursor: pointer;
+    position: relative;
+}
+.toggle-theme:hover, .toggle-theme:focus {
+    color: var(--brand-color);
+}
+.toggle-theme .icon-sun {
+    display: none;
+}
+.toggle-theme .icon-moon {
+    position: relative;
+}
+.dark .toggle-theme .icon-moon {
+    display: none;
+}
+.dark .toggle-theme .icon-sun {
+    display: block;
+}
+.nojs .toggle-theme {
+    display: none;
+}
+
+/* Layout, main elements, body, paragraphs etc */
+* {
+    box-sizing: border-box;
+}
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    font-family: var(--sans-serif-font);
+    line-height: var(--line-height);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+main {
+    padding: 1rem;
+}
+nav, main, footer {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    width: 100%;
+}
+main nav {
+    padding-top: 0px;
+}
+main nav a {
+    font-size: 15px;
+    border-right-style: none;
+}
+main .translations a {
+    font-size: 15px;
+    border-right-style: none;
+}
+body main article header p {
+    line-height: 1px;
+}
+body main article div div {
+    line-height: 1px;
+}
+
+/* Push footer to the bottom */
+@supports (display: grid) {
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    font-family: var(--sans-serif-font);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Headlines and other */
+h1 {
+    font-size: 2.369rem;
+    margin-top: calc(var(--line-height) * 1rem);
+    font-weight: 900;
+}
+h2 {
+    font-size: 1.777rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.333rem;
+    margin-top: calc(var(--line-height) * 1rem);
+    font-weight: bold;
+}
+h4 {
+    font-size: 1rem;
+    margin-top: calc(var(--line-height) * 1rem);
+}
+h5 {
+    font-size: 1rem;
+}
+p, ul, ol, table, figure, .admonition {
+    margin-bottom: calc(var(--line-height) * 1rem);
+}
+
+/* Code */
+.highlight {
+    margin-bottom: calc(var(--line-height) * 1rem);
+    position: relative;
+}
+.highlight pre {
+    max-width: var(--content-width);
+    overflow-x: auto;
+    padding: calc(var(--line-height) * 1rem);
+    background-color: var(--light-color);
+    /* Account for content padding */
+    margin: 0 -1rem;
+    /* Account for differences in font size */
+    font-size: 1.1em;
+}
+@media screen and (min-width: 52rem) {
+    .highlight pre {
+        box-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+        border: 1px solid rgba(0,0,0,0.05);
+        margin: 0;
+    }
+}
+
+/* Archives */
+dl dt {
+    font-size: 0.8rem;
+    color: var(--stable-color);
+    margin-top: 1rem;
+}
+
+/* Small features, images, paragraphs, etc */
+img, svg {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+a, a:visited {
+    color: inherit;
+}
+a:hover, a:focus {
+    color: var(--brand-color);
+}
+ul ol, ol ul, ol ol, ul ul {
+    /* Remove padding from non top level lists (e.g nested lists). */
+    margin-bottom: 0;
+}
+
+/* Social Icons */
+ul.social {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+:root ul.social a {
+    background-color: var(--bg-color);
+    border-radius: 0;
+    width: 36px;
+    height: 36px;
+}
+
+/* Nav */
+nav {
+    display: flex;
+}
+nav > *:first-child {
+    flex-grow: 1;
+    margin: 0;
+}
+nav a, nav button {
+    font-size: 1rem;
+    display: block;
+    text-align: initial;
+    padding: 1em 0.5em;
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+
+/* Paginator */
+.pagination {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 0.86em; /* the same as paragraphs under article names */
+}
+body .pagination {
+    height: fit-content;
+}
+.pagination a {
+    color: var(--text-color);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: right;
+}
+.pagination a.active {
+    background-color: var(--light-color);
+    color: var(--text-color);
+}
+.pagination a:hover:not(.active) {
+    background-color: var(--brand-color);
+    color: var(--light-color);
+}
+@media screen and (max-width: 600px) {
+    .pagination .first {
+        display: none;
+    }
+    .pagination .last {
+        display: none;
+    }
+}
