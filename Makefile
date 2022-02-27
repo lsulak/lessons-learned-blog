@@ -91,10 +91,6 @@ test: lint unit-tests
 
 lint: black-ci flake8 pylint-shorter readme-lint
 
-env:
-	python3 -m venv venv
-	echo "run: source ./venv/bin/activate"
-
 install:
 	pip install --upgrade pip
 	pip install -r requirements.txt
