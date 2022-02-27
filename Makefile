@@ -94,6 +94,7 @@ lint: black-ci flake8 pylint-shorter readme-lint
 install:
 	pip install --upgrade pip
 	pip install -r requirements.txt
+	gem install mdl
 
 black:
 	black --line-length 99 .
