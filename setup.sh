@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
+#
+# This is a short script that automates the creation of python venv,
+# and install all the dependencies you should need for the development
+# (you can also install ruby and mdl, since it's part of the CI).
+#
 
-virtualenv -p python3 venv
+make venv-create
 
-source venv/bin/activate
-
-pip install -r requirements.txt
-
-git clone https://github.com/alexandrevicenzi/Flex themes/Flex
-git clone --recursive https://github.com/getpelican/pelican-plugins
+source .venv/bin/activate
+make install

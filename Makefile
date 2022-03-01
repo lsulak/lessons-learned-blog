@@ -92,39 +92,42 @@ s3_upload: publish
 test: lint unit-tests
 
 venv-create:
-	python3 -m venv $(BASEDIR)/venv
-
-venv-activate:
-	source $(BASEDIR)/venv/bin/activate
-
-venv-deactivate:
-	deactivate
+	[ -d $(BASEDIR)/.venv ] || python3 -m venv $(BASEDIR)/.venv
 
 lint: black-ci flake8 pylint-shorter readme-lint
 
 install:
-	venv-activate
+	@echo 'Going to install Python requirements'
 	pip install --upgrade pip
 	pip install -r requirements.txt
-	gem install mdl
+	@echo ''
+
+	@echo 'Going to install Pelican-related dependencies'
+	[ -d themes/Flex ] || git clone https://github.com/alexandrevicenzi/Flex themes/Flex
+	[ -d pelican-plugins ] || git clone --recursive https://github.com/getpelican/pelican-plugins
+	@echo ''
+
+	@echo 'Going to load static content and custom settings into Pelican theme'
+	cp -r flex_modified/* themes/Flex/templates
 
 black:
-	black --line-length 99 .
+	black --line-length 99 --exclude="pelican-plugins|.venv" .
 
 black-ci:
 	echo -e "\n# Diff for each file:"; \
-	black --line-length 99 --diff .; \
+	black --line-length 99 --exclude="pelican-plugins|.venv" --diff .; \
 	echo -e "\n# Status:"; \
-	black --line-length 99 --check .
+	black --line-length 99 --exclude="pelican-plugins|.venv" --check .
 
 flake8:
-	flake8 --extend-exclude venv,build
+	flake8 --extend-exclude .venv,build
 
 PYLINT_FILES = `find . \
 		-path './docs' -prune -o \
-		-path './venv' -prune -o \
+		-path './.venv' -prune -o \
 		-path './build' -prune -o \
 		-path './themes' -prune -o \
+		-path './pelican-plugins' -prune -o \
 		-name '*.py' -print`;
 
 pylint:
@@ -139,3 +142,11 @@ readme-lint:
 unit-tests:
 	echo "Unit tests are not implemented for this project"
 	# python3 -m pytest -rxXs --cov
+
+clean-all: clean
+	find . -name '*.pyc' -delete
+	find . -name '*.pyo' -delete
+	find . -name '.pytest_cache' -type d | xargs rm -rf
+	find . -name '__pycache__' -type d | xargs rm -rf
+	find . -name '.coverage' -delete
+	find . -name '.ipynb_checkpoints' -type d | xargs rm -rf

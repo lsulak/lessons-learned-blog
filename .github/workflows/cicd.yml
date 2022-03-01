@@ -18,6 +18,10 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
+
+      - name: 'Going to install MDL checker'
+        run: gem install mdl
+
       - name: Install Python dependencies
         run: make install
 
@@ -33,15 +37,6 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: '3.10'
-
-      - name: Clone Pelican dependencies
-        run: |
-          git clone https://github.com/alexandrevicenzi/Flex themes/Flex
-          git clone https://github.com/getpelican/pelican-plugins
-
-
-      - name: Update Some Flex HTML Files With Mine
-        run: cp -r flex_modified/* themes/Flex/templates
 
       - name: Install Python dependencies
         run: make install

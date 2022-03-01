@@ -1,7 +1,9 @@
 Title: About
 Date: 2010-12-03 10:20
 
-Here it is.
+Hi!
+
+If you want to support this blog or to appreciate my work, you can buy me a coffee here.
 
 This blog was built with the following technologies:
 

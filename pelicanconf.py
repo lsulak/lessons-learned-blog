@@ -26,7 +26,6 @@ MAIN_MENU = True
 MENUITEMS = (
     ("Archives", "/archives"),
     ("Categories", "/categories"),
-    ("Appreciate", "/pages/appreciate"),
     ("About", "/pages/about"),
 )
 
@@ -115,10 +114,7 @@ DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # Theme Settings
-# SITELOGO = "/images/title.png"
-# FAVICON = "/images/favicon.png"
-SITELOGO = "/images/moon.svg"
-FAVICON = "/images/sun.svg"
+FAVICON = "/images/favicon.png"
 
 THEME = "themes/Flex"
 THEME_COLOR_ENABLE_USER_OVERRIDE = False
