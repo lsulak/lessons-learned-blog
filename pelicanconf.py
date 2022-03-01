@@ -114,7 +114,7 @@ DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # Theme Settings
-FAVICON = "/images/favicon.png"
+FAVICON = "/images/favicon.ico"
 
 THEME = "themes/Flex"
 THEME_COLOR_ENABLE_USER_OVERRIDE = False
