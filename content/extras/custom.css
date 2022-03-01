@@ -131,6 +131,10 @@ footer {
     margin-bottom: 20px;
 }
 
+body main footer {
+    margin-top: 40px;
+}
+
 /* Headlines and other */
 h1 {
     font-size: 2.369rem;
