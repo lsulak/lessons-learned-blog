@@ -111,13 +111,13 @@ install:
 	cp -r flex_modified/* themes/Flex/templates
 
 black:
-	black --line-length 99 --exclude="pelican-plugins|.venv" .
+	black --line-length 99 --exclude="pelican-plugins|themes|.venv" .
 
 black-ci:
 	echo -e "\n# Diff for each file:"; \
-	black --line-length 99 --exclude="pelican-plugins|.venv" --diff .; \
+	black --line-length 99 --exclude="pelican-plugins|themes|.venv" --diff .; \
 	echo -e "\n# Status:"; \
-	black --line-length 99 --exclude="pelican-plugins|.venv" --check .
+	black --line-length 99 --exclude="pelican-plugins|themes|.venv" --check .
 
 flake8:
 	flake8 --extend-exclude .venv,build
