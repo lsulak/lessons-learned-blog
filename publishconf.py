@@ -22,17 +22,13 @@ from pelicanconf import *  # noqa: E402
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = "https://ladislav.codes"
-# SITEURL = 'https://ls.codes'
 # SITEURL = 'https://lsulak.codes'
 # SITEURL = 'https://ladislavsulak.codes'
 
-# SITEURL = 'https://ls.com'
 # SITEURL = 'https://ladislavsulak.com'
 # SITEURL = 'https://meetladislav.com'
-# SITEURL = 'https://joinladislav.com'
 
 # SITEURL = 'https://ladislavsulak.tech'
-# SITEURL = 'https://lacosulak.tech'
 # SITEURL = 'https://ladislav.tech'
 
 RELATIVE_URLS = False

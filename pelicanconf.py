@@ -66,7 +66,7 @@ SOCIAL = (
 )
 
 # Plugins, see: http://docs.getpelican.com/en/latest/plugins.html
-PLUGIN_PATHS = ["/home/lsulak/pelican-plugins"]
+PLUGIN_PATHS = ["./pelican-plugins"]
 PLUGINS = [
     "sitemap",
     "feed_summary",
@@ -120,6 +120,6 @@ DISPLAY_CATEGORIES_ON_MENU = False
 SITELOGO = "/images/moon.svg"
 FAVICON = "/images/sun.svg"
 
-THEME = "themes/flex-adopted"
+THEME = "themes/Flex"
 THEME_COLOR_ENABLE_USER_OVERRIDE = False
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True

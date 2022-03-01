@@ -4,6 +4,8 @@
 #
 # The first part of the Makefile is related (and actually, auto-generated) to Pelican.
 #
+SHELL := /bin/bash
+
 PY?=python3
 PELICAN?=pelican
 PELICANOPTS=
@@ -89,9 +91,19 @@ s3_upload: publish
 #
 test: lint unit-tests
 
+venv-create:
+	python3 -m venv $(BASEDIR)/venv
+
+venv-activate:
+	source $(BASEDIR)/venv/bin/activate
+
+venv-deactivate:
+	deactivate
+
 lint: black-ci flake8 pylint-shorter readme-lint
 
 install:
+	venv-activate
 	pip install --upgrade pip
 	pip install -r requirements.txt
 	gem install mdl
@@ -112,6 +124,7 @@ PYLINT_FILES = `find . \
 		-path './docs' -prune -o \
 		-path './venv' -prune -o \
 		-path './build' -prune -o \
+		-path './themes' -prune -o \
 		-name '*.py' -print`;
 
 pylint:

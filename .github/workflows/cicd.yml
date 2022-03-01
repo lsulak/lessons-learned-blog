@@ -7,19 +7,21 @@ on:
 
 jobs:
   test:
-    name: test
+    name: Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
           python-version: '3.10'
+
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-      - name: install
+      - name: Install Python dependencies
         run: make install
-      - name: test
+
+      - name: Run tests
         run: make test
 
   build:
@@ -32,14 +34,17 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Clone dependencies
+      - name: Clone Pelican dependencies
         run: |
           git clone https://github.com/alexandrevicenzi/Flex themes/Flex
           git clone https://github.com/getpelican/pelican-plugins
 
-      - name: Install dependencies
+
+      - name: Update Some Flex HTML Files With Mine
+        run: cp -r flex_modified/* themes/Flex/templates
+
+      - name: Install Python dependencies
         run: make install
 
       - name: Build and publish the blog
-        run: |
-          invoke publish
+        run: invoke publish
