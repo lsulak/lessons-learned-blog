@@ -282,3 +282,11 @@ body .pagination {
         display: none;
     }
 }
+
+.profile_picture {
+    float: right;
+    padding: 1px;
+    margin: -50px 10px;
+    border: var(--stable-color) 1px solid;
+    border-radius: 50%;
+}

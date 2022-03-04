@@ -1,11 +1,15 @@
 Title: About
 Date: 2022-03-04 13:30
 
+<img class="profile_picture" src="/images/CV_Photo.jpg" alt="Profile picture" width="300"/>
+
 Hi, my name is Ladislav Sulak, I currently live in a magical city in the heart of Europe, Prague.
 
 I build software. Welcome to my blog!
 
-I started this site as a way to capture and share my journey in tech. What can you find here?
+I started this site as a way to capture and share my journey in tech.
+
+What can you find here?
 
 * The vast majority of the content is about <u>software engineering with some intersection
   of data science.</u>
