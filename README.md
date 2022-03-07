@@ -7,8 +7,8 @@ website powered by [Pelican](https://blog.getpelican.com) with slightly modified
 [Flex](https://bit.ly/flex-pelican) theme.
 
 I started this site as a way to capture and share my journey in tech. I blog about
-various things I learned, and I'm continuously learning and I focus on software
-engineering with some intersection of data science.
+various things I learned and experienced. I focus on **software
+engineering with some intersection of data science**.
 
 ## Build and run locally
 
