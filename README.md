@@ -1,7 +1,8 @@
 # lessons-learned-blog
 
 My personal blog about various things I learned, and I'm continuously
-learning.
+learning, in tech. I focus on software engineering with some intersection
+of data science.
 
-Topics: software and data engineering, math and machine learning, and some
-other things related to IT.
+Keywords could be (at least at the time of writing) around: software engineering,
+data engineering, data science, SDLC, Python, bash, databases, cloud, Linux.

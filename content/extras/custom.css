@@ -283,10 +283,22 @@ body .pagination {
     }
 }
 
+/* About page, profile picture */
 .profile_picture {
-    float: right;
-    padding: 1px;
+    float: inline-end;
     margin: -50px 10px;
-    border: var(--stable-color) 1px solid;
+    border: var(--stable-color) 2px solid;
     border-radius: 50%;
+    width: 280px;
+}
+@media screen and (max-width: 800px) {
+    .profile_picture {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 250px;
+    }
 }
