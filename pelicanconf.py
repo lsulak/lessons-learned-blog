@@ -83,7 +83,6 @@ STATIC_PATHS = [
     "images",
     "extras/count.js",
     "extras/custom.css",
-    "extras/CNAME",
     "extras/robots.txt",
 ]
 
