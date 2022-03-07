@@ -5,6 +5,7 @@ flake8
 pylint
 
 # Production related
+livereload
 bs4
 markdown
 invoke
