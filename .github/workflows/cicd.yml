@@ -41,5 +41,8 @@ jobs:
       - name: Install Python dependencies
         run: make install
 
-      - name: Build and publish the blog
-        run: invoke publish
+      - name: Build the blog
+        run: invoke gh-pages
+
+      - name: Publish the blog
+      run: git push -f "https://${GITHUB_ACTOR}:${{secrets.TOKEN}}@github.com/${GITHUB_REPOSITORY}.git" gh-pages:gh-pages

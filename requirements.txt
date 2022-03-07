@@ -1,10 +1,11 @@
-# CI/CD related
+# CI related
 black
 coala
 flake8
 pylint
 
-# Production related
+# CD/Production related
+ghp-import
 livereload
 bs4
 markdown
