@@ -1,0 +1,26 @@
+{% if articles_page and articles_paginator.num_pages > 1 %}
+<div class="pagination">
+
+  <a class="first" href="{{ SITEURL }}/{{ page_name }}.html">First</a>
+
+  {% if articles_page.has_previous() %}
+    {% set num = articles_page.previous_page_number() %}
+    <a class="prev" href="{{ SITEURL }}{{ '/page/' ~ num if num > 1 else '' }}">&laquo;</a>
+  {% else %}
+    <a href="#" class="prev disabled">&laquo;</a>
+  {% endif %}
+
+  {% for num in range( 1, 1 + articles_paginator.num_pages ) %}
+    <a class="{{ 'active' if num == articles_page.number else '' }}" href="{{ SITEURL }}{{ '/page/' ~ num if num > 1 else '' }}">{{ num }}</a>
+  {% endfor %}
+
+  {% if articles_page.has_next() %}
+    <a class="next" href="{{ SITEURL }}/page/{{ articles_page.next_page_number() }}">&raquo;</a>
+  {% else %}
+    <a class="next disabled" href="#">&raquo;</a>
+  {% endif %}
+
+  <a class="last" href="{{ SITEURL }}/page/{{ articles_paginator.num_pages }}">Last</a>
+
+</div>
+{% endif %}
