@@ -7,17 +7,17 @@ website powered by [Pelican](https://blog.getpelican.com) with slightly modified
 [Flex](https://bit.ly/flex-pelican) theme.
 
 I started this site as a way to capture and share my journey in tech. I blog about
-various things I learned, and I'm continuously learning, in tech. I focus on software
+various things I learned, and I'm continuously learning and I focus on software
 engineering with some intersection of data science.
 
 ## Build and run locally
 
-Follow these steps if you want to build the blog locally, including installation
-of all dependencies:
+If you want to build the blog locally, including installation
+of all dependencies, please follow these steps:
 
-    # Create and activate virtual env and install dependencies: `./setup.sh`
-    # Run `make html && pelican --listen`
-    # Visit [http://localhost:8000](http://localhost:8000)
+1. Create and activate virtual env and install dependencies: `./setup.sh`
+1. Run `make html && pelican --listen`
+1. Visit [http://localhost:8000](http://localhost:8000)
 
 *Note*: optionally also install `gem` and `mdl`
 (details [here](https://github.com/markdownlint/markdownlint) for having
