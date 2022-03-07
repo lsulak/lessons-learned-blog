@@ -6,5 +6,6 @@ pylint
 
 # Production related
 bs4
+markdown
 invoke
 pelican
