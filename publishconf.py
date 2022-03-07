@@ -21,23 +21,15 @@ from pelicanconf import *  # noqa: E402
 # pylint: enable=wrong-import-position,wildcard-import,unused-wildcard-import
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = "https://ladislav.codes"
-# SITEURL = 'https://lsulak.codes'
-# SITEURL = 'https://ladislavsulak.codes'
+SITEURL = "https://lsulak.github.io"
 
-# SITEURL = 'https://ladislavsulak.com'
-# SITEURL = 'https://meetladislav.com'
-
-# SITEURL = 'https://ladislavsulak.tech'
-# SITEURL = 'https://ladislav.tech'
-
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
-# GOOGLE_ANALYTICS = "UA-73000395-1"
-# GOOGLE_TAG_MANAGER = "GTM-5K6D7ZG"
-# MICROSOFT_CLARITY = "7cfbr3w8ss"
+# GOOGLE_ANALYTICS = ""
+# GOOGLE_TAG_MANAGER = ""
+# MICROSOFT_CLARITY = ""
 # STATUSCAKE = { 'trackid': 'your-id', 'days': 7, 'design': 6, 'rumid': 1234 }
 # DISQUS_SITENAME = ""

@@ -10,9 +10,13 @@ from datetime import datetime
 
 AUTHOR = "Ladislav Sulak"
 SITENAME = "Ladislav's Blog"
-SITEURL = "http://localhost:8000"
+SITEURL = "https://lsulak.github.io"
 SITETITLE = AUTHOR
-SITEDESCRIPTION = "programming, data, databases, machine learning, python, AWS"
+SITEDESCRIPTION = """
+    software development, programming,
+    data science, databases, machine learning,
+    python, AWS, linux
+"""
 
 COPYRIGHT_NAME = AUTHOR
 BLOGGING_BEGAN_YEAR = 2021
@@ -41,20 +45,9 @@ TIMEZONE = "Europe/Prague"
 DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-
-# FEED_USE_SUMMARY = True
-# FEED_DOMAIN = SITEURL
-# FEED_ALL_ATOM = "feeds/all.atom.xml"
-# CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
-# CATEGORY_FEED_ATOM = "feeds/%s.atom.xml"
-# TRANSLATION_FEED_ATOM = None
-# AUTHOR_FEED_ATOM = None
-# AUTHOR_FEED_RSS = None
+FEED_DOMAIN = SITEURL
+FEED_ALL_ATOM = "feeds/all.atom.xml"
+CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
 # Social widget
 SOCIAL = (
@@ -66,11 +59,7 @@ SOCIAL = (
 
 # Plugins, see: http://docs.getpelican.com/en/latest/plugins.html
 PLUGIN_PATHS = ["./pelican-plugins"]
-PLUGINS = [
-    "sitemap",
-    "feed_summary",
-    "post_stats",
-]
+PLUGINS = ["sitemap", "post_stats"]
 
 # Sitemap Settings
 SITEMAP = {
