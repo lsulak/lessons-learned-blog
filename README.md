@@ -10,7 +10,7 @@ I started this site as a way to capture and share my journey in tech. I blog abo
 various things I learned and experienced, mostly focusing on **software
 engineering with some intersection of data science**.
 
-## Build and run locally
+## Build And Run Locally
 
 If you want to build the blog locally, including installation
 of all dependencies, please follow these steps:
