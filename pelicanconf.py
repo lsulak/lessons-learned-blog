@@ -68,16 +68,8 @@ PLUGINS = ["sitemap", "post_stats"]
 # Sitemap Settings
 SITEMAP = {
     "format": "xml",
-    "priorities": {
-        "articles": 0.6,
-        "indexes": 0.6,
-        "pages": 0.5,
-    },
-    "changefreqs": {
-        "articles": "monthly",
-        "indexes": "daily",
-        "pages": "monthly",
-    },
+    "priorities": {"articles": 0.6, "indexes": 0.6, "pages": 0.5},
+    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
     "exclude": ["tag/"],
 }
 
