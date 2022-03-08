@@ -1,4 +1,4 @@
-# lessons-learned-blog
+# Ladislav's Tech Blog on lsulak.github.io
 
 [![Deploy Blog](https://github.com/lsulak/lessons-learned-blog/actions/workflows/cicd.yml/badge.svg)](https://github.com/lsulak/lessons-learned-blog/actions/workflows/cicd.yml)
 
