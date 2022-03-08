@@ -238,8 +238,20 @@ nav a, nav button {
     color: inherit;
     white-space: nowrap;
     text-transform: capitalize;
-    font-weight: 900;
+    font-weight: 800;
 }
+@media screen and (max-width: 400px) {
+    nav a, nav button {
+        padding: 1em 0.1em;
+    }
+    main nav a {
+        font-size: 14.8px;
+    }
+    main .translations a {
+        font-size: 14.8px;
+    }
+}
+
 nav ul {
     list-style: none;
     margin: 0;
