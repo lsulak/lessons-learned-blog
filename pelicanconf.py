@@ -50,6 +50,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+FEED_ALL_ATOM_RENDER = False
+FEED_ALL_RSS_RENDER = False
 
 # Social widget
 SOCIAL = (
@@ -66,16 +68,8 @@ PLUGINS = ["sitemap", "post_stats"]
 # Sitemap Settings
 SITEMAP = {
     "format": "xml",
-    "priorities": {
-        "articles": 0.6,
-        "indexes": 0.6,
-        "pages": 0.5,
-    },
-    "changefreqs": {
-        "articles": "monthly",
-        "indexes": "daily",
-        "pages": "monthly",
-    },
+    "priorities": {"articles": 0.6, "indexes": 0.6, "pages": 0.5},
+    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
     "exclude": ["tag/"],
 }
 

@@ -3,9 +3,10 @@ Date: 2022-03-05 18:30
 
 <img class="profile_picture" src="/images/CV_Photo.jpg" alt="Profile picture"/>
 
-Hi! My name is Ladislav Sulak, I currently live in&nbsp;a&nbsp;magical city in the heart of Europe, Prague.
+Hi! My name is Ladislav Sulak, I currently live in&nbsp;a&nbsp;magical city in the heart of Europe,
+Prague...and I build software.
 
-I build software. I started this site as a&nbsp;way to capture and share my journey in tech. Welcome to my blog!
+I started this site as a&nbsp;way to capture and share my journey in tech. Welcome to my blog!
 
 What can you find here?
 
@@ -18,7 +19,6 @@ What can you find here?
 
 * Blog posts related to my occasional participation in hackathons and online challenges,
   or just quick highlights from conferences I&nbsp;watch, books I&nbsp;read, or&nbsp;certifications I&nbsp;undertake.
-
 
 ## Why Do I Blog?
 
@@ -46,7 +46,9 @@ This blog was built with the help of many brilliant people:
 * <u><a href="https://feathericons.com">Feather</a></u> - Simply beautiful open source icons
 * <u><a href="https://www.goatcounter.com">Goat Counter</a></u> - Open source web analytics platform that do not track personal data
 * <u><a href="https://analytics.google.com">Google Analytics</a></u> - Web analytics platform
+* <u><a href="https://disqus.com">Disqus</a></u> - Add-on tools for websites to increase engagement
 * <u><a href="https://www.buymeacoffee.com">Buy Me a Coffee</a></u> - A service for creators to collect donations from their supporters
+* <u><a href="https://mailchimp.com">Mailchimp</a></u> - Marketing, Automation & Email Platform
 
 <br />
 <a href="https://www.buymeacoffee.com/lsulak">

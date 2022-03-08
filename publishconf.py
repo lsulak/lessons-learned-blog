@@ -27,12 +27,10 @@ RELATIVE_URLS = True
 FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
+FEED_ALL_RSS = "feed/all.rss.xml"
 
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 # GOOGLE_ANALYTICS = ""
-# GOOGLE_TAG_MANAGER = ""
-# MICROSOFT_CLARITY = ""
-# STATUSCAKE = { 'trackid': 'your-id', 'days': 7, 'design': 6, 'rumid': 1234 }
 # DISQUS_SITENAME = ""
