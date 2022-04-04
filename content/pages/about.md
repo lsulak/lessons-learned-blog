@@ -11,7 +11,7 @@ I started this site as a&nbsp;way to capture and share my journey in tech. Welco
 
 What can you find here?
 
-* A vast majority of the content is about <u>software/data engineering with some intersection of&nbsp;data science.</u>
+* A vast majority of the content is about <u>software and data engineering, centered around data-intensive back-end systems.</u>
 
 * Experiences, thoughts, or just my notes related to various aspects of the Software Development Life Cycle
   that go beyond pure coding. Interesting concepts and philosophies. Software design and architecture.
