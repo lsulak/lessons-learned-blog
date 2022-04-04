@@ -17,7 +17,7 @@ from pelican import main as pelican_main
 from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
 
-# pylint: disable=unused-argument,missing-function-docstring
+# pylint: disable=unused-argument,missing-function-docstring,consider-using-f-string
 
 SETTINGS_FILE_BASE = "pelicanconf.py"
 SETTINGS = {}
