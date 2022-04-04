@@ -103,3 +103,19 @@ FAVICON = "/images/favicon.ico"
 THEME = "themes/Flex"
 THEME_COLOR_ENABLE_USER_OVERRIDE = False
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
+
+MARKDOWN = {
+    'extension_configs': {
+        # Needed for code syntax highlighting
+        'markdown.extensions.codehilite': {
+            'css_class': 'highlight'
+        },
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        # This is for enabling the TOC generation
+        'markdown.extensions.toc': {
+            'title': 'Table of Contents',
+        },
+    },
+    'output_format': 'html5',
+}

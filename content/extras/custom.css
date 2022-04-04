@@ -93,6 +93,8 @@ main {
 nav, main, footer {
     max-width: var(--content-width);
     margin: 0 auto;
+}
+nav, footer {
     width: 100%;
 }
 main nav {
@@ -111,6 +113,12 @@ body main article header p {
 }
 body main article div div {
     line-height: 1px;
+}
+body main article {
+    margin: 0 0.5% 2% 0.5%;
+}
+main article {
+    max-width: max-content;
 }
 
 /* Push footer to the bottom */
@@ -313,4 +321,30 @@ body .pagination {
         margin-top: 10px;
         width: 250px;
     }
+}
+
+/* TOC */
+.toc {
+    display: table;
+    width: auto;
+    background: darken(var(--bg-color), 150%) none repeat scroll 0 0;
+    border: 1px solid var(--stable-color);
+    display: block;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: auto;
+    line-height: normal;
+}
+.toc .toctitle {
+    font-weight: bold;
+}
+.toc ul {
+    padding-left: 1rem;
+}
+.toc li {
+    padding-top: 5px;
+}
+.toc > ul {
+    margin-bottom: 0;
 }

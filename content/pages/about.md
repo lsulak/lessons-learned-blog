@@ -1,30 +1,33 @@
 Title: About
-Date: 2022-03-05 18:30
+Date: 2022-04-04 15:00
 
 <img class="profile_picture" src="/images/CV_Photo.jpg" alt="Profile picture"/>
 
 Hi! My name is Ladislav Sulak, I currently live in&nbsp;a&nbsp;magical city in the heart of Europe,
-Prague...and I build software.
+Prague. I'm a software and data engineer focused on developing and employing reliable, scalable, and
+maintainable systems.
 
 I started this site as a&nbsp;way to capture and share my journey in tech. Welcome to my blog!
 
 What can you find here?
 
-* A vast majority of the content is about <u>software engineering with some intersection of&nbsp;data science.</u>
+* A vast majority of the content is about <u>software/data engineering with some intersection of&nbsp;data science.</u>
 
-* Experiences, thoughts, or just my notes related to various aspects of the software development lifecycle
+* Experiences, thoughts, or just my notes related to various aspects of the Software Development Life Cycle
   that go beyond pure coding. Interesting concepts and philosophies. Software design and architecture.
   Stakeholder engagement, agile project management and leadership. Anything that I&nbsp;consider interesting
-  and is part of&nbsp;the game.
+  and is part of&nbsp;the process.
 
 * Blog posts related to my occasional participation in hackathons and online challenges,
   or just quick highlights from conferences I&nbsp;watch, books I&nbsp;read, or&nbsp;certifications I&nbsp;undertake.
 
+If you'd like to see my CV, it's [here](https://github.com/lsulak/lessons-learned-templates/raw/master/latex/latex_cv/resume.pdf).
+
 ## Why Do I Blog?
 
 * <u>To learn.</u> When I learn something new, I like to take a moment and think about it, reiterate, and ideally compact
-  the most important lessons into a&nbsp;nice format, resulting in a&nbsp;blog post. This way my learning
-  experience is even more reinforced.
+  the most important lessons into a&nbsp;nice format, sometimes resulting in a&nbsp;blog post.
+  This way my learning experience is even more reinforced.
 
 * <u>To store.</u> I don't have good enough memory to remember everything I&nbsp;learn/experience for
   extended period of time. Each blog post is a&nbsp;tiny piece of my brain dump, which I&nbsp;can easily
