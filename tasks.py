@@ -5,11 +5,11 @@
 For more information, please read the official documentation:
     https://docs.getpelican.com/en/stable/index.html.
 """
+import datetime
 import os
 import shlex
 import shutil
 import sys
-import datetime
 
 from invoke import task
 from invoke.main import program
@@ -17,7 +17,7 @@ from pelican import main as pelican_main
 from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
 
-# pylint: disable=unused-argument,consider-using-f-string,missing-function-docstring
+# pylint: disable=unused-argument,missing-function-docstring
 
 SETTINGS_FILE_BASE = "pelicanconf.py"
 SETTINGS = {}

@@ -2,6 +2,7 @@
 black
 coala
 flake8
+flake8-isort
 pylint
 
 # CD/Production related

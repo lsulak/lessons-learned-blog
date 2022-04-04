@@ -6,6 +6,7 @@ For more information, please read the official documentation:
     https://docs.getpelican.com/en/stable/index.html.
 """
 from __future__ import unicode_literals
+
 from datetime import datetime
 
 AUTHOR = "Ladislav Sulak"
@@ -105,17 +106,15 @@ THEME_COLOR_ENABLE_USER_OVERRIDE = False
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
 
 MARKDOWN = {
-    'extension_configs': {
+    "extension_configs": {
         # Needed for code syntax highlighting
-        'markdown.extensions.codehilite': {
-            'css_class': 'highlight'
-        },
-        'markdown.extensions.extra': {},
-        'markdown.extensions.meta': {},
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
         # This is for enabling the TOC generation
-        'markdown.extensions.toc': {
-            'title': 'Table of Contents',
+        "markdown.extensions.toc": {
+            "title": "Table of Contents",
         },
     },
-    'output_format': 'html5',
+    "output_format": "html5",
 }
