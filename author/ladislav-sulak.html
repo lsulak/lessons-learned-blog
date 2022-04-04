@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="../theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/solid.css">
+
+    <link rel="stylesheet" type="text/css" href="../extras/custom.css">
+
+    <link href="https://lsulak.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ladislav's Blog Atom">
+
+    <link href="https://lsulak.github.io/feed/all.rss.xml" type="application/rss+xml" rel="alternate" title="Ladislav's Blog RSS">
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+    <meta name="author" content="Ladislav Sulak" />
+    <meta name="description" content="
+    software development, programming,
+    data science, databases, machine learning,
+    python, AWS, linux
+" />
+  <meta property="og:site_name" content="Ladislav's Blog"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:title" content="Ladislav's Blog"/>
+  <meta property="og:description" content="
+    software development, programming,
+    data science, databases, machine learning,
+    python, AWS, linux
+"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content=".."/>
+
+  <title>Ladislav's Blog &ndash; Posts by Ladislav Sulak:</title>
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments);};ga.l=+(new Date());
+    ga('create', 'UA-131229086-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+    window.goatcounter = {
+        path: location.pathname || '/',
+        referrer: function() {
+            return goatcounter.get_query('utm_source') || document.referrer;
+        },
+    };
+    document.addEventListener('DOMContentLoaded', () => {
+        const baseUrl = `${location.protocol}//${location.host}`
+        Array.from(document.querySelectorAll('a[href]'))
+        .filter(a => !a.href.startsWith(baseUrl))
+        .forEach(a => a.addEventListener('click', () => window.goatcounter.count({
+            path: p => `outgoing:${p}:${a.textContent}`,
+            title: a.textContent,
+            event: true,
+        })));
+    });
+  </script>
+  <script data-goatcounter="https://goat.lsulak.github.io:/count" async="" src="/extras/count.js"></script>
+  <script>
+    (function(window, document) {
+        // JS
+        document.documentElement.classList.remove('nojs');
+
+        // Theme
+        const prefersDarkColorScheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const selectedTheme = window.localStorage.getItem('theme');
+        if (selectedTheme === 'dark' || (!selectedTheme && prefersDarkColorScheme)) {
+            document.documentElement.classList.add('dark');
+            ga('set', 'dimension1', 'dark');
+        } else {
+            ga('set', 'dimension1', 'light');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.querySelector('.toggle-theme');
+            toggleButton && toggleButton.addEventListener('click', () => {
+                const wasLight = document.documentElement.classList.toggle('dark');
+                const theme = wasLight ? 'dark' : 'light';
+                ga('set', 'dimension1', theme);
+                ga('send', 'event', 'theme', 'switched theme', theme, 1);
+                window.localStorage.setItem('theme', theme);
+            });
+        });
+    })(window, document);
+  </script>
+</head>
+<body >
+
+  <main>
+
+    <nav>
+      <a href="../">Ladislav Sulak</a>
+
+      <a href="/archives">Archives</a>
+      <a href="/categories">Categories</a>
+      <a href="/pages/about">About</a>
+
+
+
+      <button title="Switch Theme" aria-label="Switch Theme" class="toggle-theme">
+      <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="icon-moon">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+
+      <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sun">
+          <circle cx="12" cy="12" r="5" fill="currentColor"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      </button>
+
+    </nav>
+
+
+
+<article>
+  <header>
+    <h2><a href="../first">My First Demo Article</a></h2>
+    <p>
+      Feb 26, 2022 &#8226; <a href="../category/loremipsum">loremipsum</a>
+
+
+        &#8226; 3 min read
+    </p>
+  </header>
+  <div>
+      <div><p>Short version for index and feeds1</p></div>
+  </div>
+</article>
+
+
+
+
+    <footer>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-linkedin" href="https://linkedin.com/in/ladislav-sulak" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-github" href="https://github.com/lsulak" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-medium" href="https://medium.com/@lsulak" target="_blank">
+              <i class="fab fa-medium"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-goodreads " href="https://www.goodreads.com/user/show/114351959-ladislav-ul-k" target="_blank">
+              <i class="fab fa-goodreads "></i>
+            </a>
+          </li>
+      </ul>
+
+<p>&copy; 2021 - 2022 Ladislav Sulak</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>
+    </footer>
+
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Ladislav's Blog ",
+  "url" : "..",
+  "image": "",
+  "description": "
+    software development, programming,
+    data science, databases, machine learning,
+    python, AWS, linux
+"
+}
+</script>
+
+</body>
+</html>

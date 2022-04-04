@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="../theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/solid.css">
+
+    <link rel="stylesheet" type="text/css" href="../extras/custom.css">
+
+    <link href="https://lsulak.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ladislav's Blog Atom">
+
+    <link href="https://lsulak.github.io/feed/all.rss.xml" type="application/rss+xml" rel="alternate" title="Ladislav's Blog RSS">
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+
+
+    <meta name="author" content="Ladislav Sulak" />
+    <meta name="description" content="
+    software development, programming,
+    data science, databases, machine learning,
+    python, AWS, linux
+" />
+  <meta property="og:site_name" content="Ladislav's Blog"/>
+  <meta property="og:type" content="blog"/>
+  <meta property="og:title" content="Ladislav's Blog"/>
+  <meta property="og:description" content="
+    software development, programming,
+    data science, databases, machine learning,
+    python, AWS, linux
+"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content=".."/>
+
+
+
+  <title>Ladislav's Blog &ndash; About</title>
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments);};ga.l=+(new Date());
+    ga('create', 'UA-131229086-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+    window.goatcounter = {
+        path: location.pathname || '/',
+        referrer: function() {
+            return goatcounter.get_query('utm_source') || document.referrer;
+        },
+    };
+    document.addEventListener('DOMContentLoaded', () => {
+        const baseUrl = `${location.protocol}//${location.host}`
+        Array.from(document.querySelectorAll('a[href]'))
+        .filter(a => !a.href.startsWith(baseUrl))
+        .forEach(a => a.addEventListener('click', () => window.goatcounter.count({
+            path: p => `outgoing:${p}:${a.textContent}`,
+            title: a.textContent,
+            event: true,
+        })));
+    });
+  </script>
+  <script data-goatcounter="https://goat.lsulak.github.io:/count" async="" src="/extras/count.js"></script>
+  <script>
+    (function(window, document) {
+        // JS
+        document.documentElement.classList.remove('nojs');
+
+        // Theme
+        const prefersDarkColorScheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const selectedTheme = window.localStorage.getItem('theme');
+        if (selectedTheme === 'dark' || (!selectedTheme && prefersDarkColorScheme)) {
+            document.documentElement.classList.add('dark');
+            ga('set', 'dimension1', 'dark');
+        } else {
+            ga('set', 'dimension1', 'light');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.querySelector('.toggle-theme');
+            toggleButton && toggleButton.addEventListener('click', () => {
+                const wasLight = document.documentElement.classList.toggle('dark');
+                const theme = wasLight ? 'dark' : 'light';
+                ga('set', 'dimension1', theme);
+                ga('send', 'event', 'theme', 'switched theme', theme, 1);
+                window.localStorage.setItem('theme', theme);
+            });
+        });
+    })(window, document);
+  </script>
+</head>
+<body >
+
+  <main>
+
+    <nav>
+      <a href="../">Ladislav Sulak</a>
+
+      <a href="/archives">Archives</a>
+      <a href="/categories">Categories</a>
+      <a href="/pages/about">About</a>
+
+
+
+      <button title="Switch Theme" aria-label="Switch Theme" class="toggle-theme">
+      <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="icon-moon">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+
+      <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sun">
+          <circle cx="12" cy="12" r="5" fill="currentColor"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      </button>
+
+    </nav>
+
+<article class="single">
+  <header>
+    
+    <h1 id="about">About</h1>
+  </header>
+  <div>
+<p><img class="profile_picture" src="/images/CV_Photo.jpg" alt="Profile picture"/></p>
+<p>Hi! My name is Ladislav Sulak, I currently live in&nbsp;a&nbsp;magical city in the heart of Europe,
+Prague. I'm a software and data engineer focused on developing and employing reliable, scalable, and
+maintainable systems.</p>
+<p>I started this site as a&nbsp;way to capture and share my journey in tech. Welcome to my blog!</p>
+<p>What can you find here?</p>
+<ul>
+<li>
+<p>A vast majority of the content is about <u>software and data engineering, centered around data-intensive back-end systems.</u></p>
+</li>
+<li>
+<p>Experiences, thoughts, or just my notes related to various aspects of the Software Development Life Cycle
+  that go beyond pure coding. Interesting concepts and philosophies. Software design and architecture.
+  Stakeholder engagement, agile project management and leadership. Anything that I&nbsp;consider interesting
+  and is part of&nbsp;the process.</p>
+</li>
+<li>
+<p>Blog posts related to my occasional participation in hackathons and online challenges,
+  or just quick highlights from conferences I&nbsp;watch, books I&nbsp;read, or&nbsp;certifications I&nbsp;undertake.</p>
+</li>
+</ul>
+<p>If you'd like to see my CV, it's <a href="https://github.com/lsulak/lessons-learned-templates/raw/master/latex/latex_cv/resume.pdf">here</a>.</p>
+<h2 id="why-do-i-blog">Why Do I Blog?</h2>
+<ul>
+<li>
+<p><u>To learn.</u> When I learn something new, I like to take a moment and think about it, reiterate, and ideally compact
+  the most important lessons into a&nbsp;nice format, sometimes resulting in a&nbsp;blog post.
+  This way my learning experience is even more reinforced.</p>
+</li>
+<li>
+<p><u>To store.</u> I don't have good enough memory to remember everything I&nbsp;learn/experience for
+  extended period of time. Each blog post is a&nbsp;tiny piece of my brain dump, which I&nbsp;can easily
+  find and refer to later.</p>
+</li>
+<li>
+<p><u>To share.</u> I'm a very transparent person, who loves to share. Perhaps other people will find my posts useful.</p>
+</li>
+</ul>
+<h2 id="contact">Contact</h2>
+<p>You can reach me at <u><a href="mailto:laco.sulak@gmail.com">laco.sulak@gmail.com</a></u>. I&nbsp;always welcome any feedback.</p>
+<h2 id="about-this-blog">About This Blog</h2>
+<p>This blog was built with the help of many brilliant people:</p>
+<ul>
+<li><u><a href="https://blog.getpelican.com">Pelican</a></u> - A static site generator powered by <a href="https://www.python.org">Python</a></li>
+<li><u><a href="https://bit.ly/flex-pelican">Flex theme</a></u> - The minimalist Pelican theme</li>
+<li><u><a href="https://github.com">GitHub</a></u> - For versioning the blog's source code and site hosting</li>
+<li><u><a href="https://feathericons.com">Feather</a></u> - Simply beautiful open source icons</li>
+<li><u><a href="https://www.goatcounter.com">Goat Counter</a></u> - Open source web analytics platform that do not track personal data</li>
+<li><u><a href="https://analytics.google.com">Google Analytics</a></u> - Web analytics platform</li>
+<li><u><a href="https://disqus.com">Disqus</a></u> - Add-on tools for websites to increase engagement</li>
+<li><u><a href="https://www.buymeacoffee.com">Buy Me a Coffee</a></u> - A service for creators to collect donations from their supporters</li>
+<li><u><a href="https://mailchimp.com">Mailchimp</a></u> - Marketing, Automation &amp; Email Platform</li>
+</ul>
+<p><br />
+<a href="https://www.buymeacoffee.com/lsulak">
+    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=lsulak&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
+</a></p>  </div>
+</article>
+
+    <footer>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-linkedin" href="https://linkedin.com/in/ladislav-sulak" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-github" href="https://github.com/lsulak" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-medium" href="https://medium.com/@lsulak" target="_blank">
+              <i class="fab fa-medium"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-goodreads " href="https://www.goodreads.com/user/show/114351959-ladislav-ul-k" target="_blank">
+              <i class="fab fa-goodreads "></i>
+            </a>
+          </li>
+      </ul>
+
+<p>&copy; 2021 - 2022 Ladislav Sulak</p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>
+    </footer>
+
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Ladislav's Blog ",
+  "url" : "..",
+  "image": "",
+  "description": "
+    software development, programming,
+    data science, databases, machine learning,
+    python, AWS, linux
+"
+}
+</script>
+
+</body>
+</html>
